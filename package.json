@@ -1,0 +1,22 @@
+{
+  "name": "multiplayer-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Real-Time Multiplayer Tic-Tac-Toe Game with Node.js and Socket.IO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Mohd Talib",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.5",
+    "eslint-plugin-import": "^2.7.0",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "skeleton": "^0.1.2",
+    "skeleton-css": "^2.0.4",
+    "socket.io": "^1.7.1"
+  }
+}

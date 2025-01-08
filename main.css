@@ -1,0 +1,179 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+}
+
+.hero{
+  margin-top: 50px;
+}
+
+/* Container Styling */
+.container {
+  margin-top: 150px;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+h1 {
+  font-size: 6rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Menu Styling */
+.menu {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.menu li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Game Board Styling */
+.gameBoard {
+  display: none;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+/* Table for the Tic-Tac-Toe Board */
+table.center {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.tile {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tile:disabled {
+  color: #888;
+}
+
+.tile:hover {
+  background-color: #f0f0f0;
+}
+
+/* Game Status Text */
+#turn {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#userHello {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .menu h4 {
+    font-size: 1.2rem;
+  }
+
+  .menu li {
+    font-size: 1rem;
+  }
+
+  .gameBoard {
+    font-size: 1rem;
+  }
+
+  .tile {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .menu h4 {
+    font-size: 1rem;
+  }
+
+  .menu li {
+    font-size: 0.9rem;
+  }
+
+  .gameBoard {
+    font-size: 0.9rem;
+  }
+
+  .tile {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+}
